@@ -1,0 +1,13 @@
+{
+  "name": "jqutilities",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+	"ejs": "*",
+    "ejs-locals": "^1.0.2",
+    "express": "3.3.5"
+  }
+}

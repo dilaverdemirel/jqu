@@ -1,0 +1,30 @@
+<% layout('layout') -%>
+
+<h3>User List </h3>
+<div id = "userTable"></div>
+
+<h3>Insert/Update Record </h3>
+<div id = "operationDesc"></div>
+<form id = "saveUserForm" method = "post" action = "/user/add">
+<input type = "hidden" name = "id" id = "id"/>
+<table>
+<tr>
+	<td>Name</td>
+	<td><input type = "text" name = "name" id = "name" required/></td>
+</tr>
+<tr>
+	<td>Profession</td>
+	<td>
+		<select name = "profession" id = "profession">
+			<option value = "teacher">Teacher</option>
+			<option value = "librarian">Librarian</option>
+			<option value = "clerk">Clerk</option>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td><input type = "reset" name = "Clear" id = "clear"/></td>
+	<td><input type = "submit" name = "Save" id = "save" onclick = "return JQU.sample.saveUser();"/></td>
+</tr>
+</table>
+</form>
